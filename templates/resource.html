@@ -1,0 +1,99 @@
+{% extends 'header.html' %}
+
+
+{% block content %}
+<title>Knewy/Resource</title>
+<style>
+
+
+html { font-size: 22px; }
+body { padding: 1rem; 
+background-color: black;
+font-family: Poppins;}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  margin-left: 3rem;
+	width:310px;
+	height:290px;
+  display: inline-block;
+  text-align:justify;
+  border-top-left-radius:29px;
+	border-top-right-radius:29px;
+	border-bottom-left-radius:29px;
+	border-bottom-right-radius:29px;
+}
+.charspec{
+  color: black;
+  font-size:20px;
+  text-align: center;
+  position: relative;
+}
+.incard{
+  box-shadow:0px 10px 10px rgba(0, 0, 0, 0.1);
+	background-color:rgba(255, 255, 255, 1);
+	width:154px;
+	height:45px;
+	position:absolute;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  left:1px;
+	top:-8px;
+	border-top-left-radius:29px;
+	border-top-right-radius:29px;
+	border-bottom-left-radius:29px;
+	border-bottom-right-radius:29px;
+}
+.intext { 
+	color:rgba(0, 0, 0, 1);
+	width:235px;
+	height:30px;
+	position:absolute;
+	font-family:Poppins;
+	text-align:justify;
+	font-size:20px;
+	letter-spacing:0;
+  padding-top: 50px;
+}
+br {
+  display: block;
+  margin-bottom: 2px;
+  font-size:2px;
+  line-height: 2px;
+}
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 4rem;
+  align-content: center;
+}
+</style>
+<div class="cards">
+  <div class="card"><span class="incard"><span class="charspec">CBSE</span></span>
+    <div class="intext">CBSE - 2021</br>CBSE - 2020</br>CBSE - 2019</br>CBSE - 2018</br>CBSE - 2017</div>
+  </div>
+  <div class="card"><span class="incard"><span class="charspec">ICSE</span></span>
+    <div class="intext">ICSE - 2021</br>ICSE - 2020</br>ICSE - 2019</br>ICSE - 2018</br>ICSE - 2017</div></div>
+  <div class="card"><span class="incard"><span class="charspec">SAT</span></span>
+    <div class="intext">SAT - READING</br>SAT - WRITING</br>SAT - MATH</div></div>
+  <div class="card"><span class="incard"><span class="charspec">JEE MAINS</span></span>
+    <div class="intext">JEE MAINS - 2021</br>JEE MAINS - 2020</br>JEE MAINS - 2019</br>JEE MAINS - 2018</br>JEE MAINS - 2017</div></div>
+  <div class="card"><span class="incard"><span class="charspec">JEE ADV.</span></span>
+    <div class="intext">JEE ADV - 2021</br>JEE ADV - 2020</br>JEE ADV - 2019</br>JEE ADV - 2018</br>JEE ADV - 2017</div></div>
+  <div class="card"><span class="incard"><span class="charspec">NEET</span></span>
+    <div class="intext">NEET - 2021</br>NEET - 2020</br>NEET - 2019</br>NEET - 2018</br>NEET - 2017</div></div>
+  <div class="card"><span class="incard"><span class="charspec">JIPMER</span></span>
+    <div class="intext">JIPMER - 2021</br>JIPMER - 2020</br>JIPMER - 2019</br>JIPMER - 2018</br>JIPMER - 2017</div></div>
+  <div class="card"><span class="incard"><span class="charspec">ACT</span></span>
+    <div class="intext">ACT PAPERS</div></div>
+  <div class="card"><span class="incard"><span class="charspec">AIIMS</span></span>
+    <div class="intext">AIIMS - 2021</br>AIIMS - 2020</br>AIIMS - 2019</br>AIIMS - 2018</br>AIIMS - 2017</div></div>
+</div>
+{% endblock %}  

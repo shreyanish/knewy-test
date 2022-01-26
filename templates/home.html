@@ -1,0 +1,403 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<style>
+    body {
+    width: 100%;
+    height: 2400px;
+    background-color: black;
+    color: white;
+    padding-top: 5vw;
+}
+
+.intro h1{
+    position: absolute;
+width: 53vw;
+height: 25.5vh;
+left: 8.125vw;
+top: 11.647vw;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 4.44vw;
+line-height: 6.66vw;
+
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+	width:370px;
+	height:470px;
+  display: inline-block;
+  text-align:justify;
+  border-top-left-radius:29px;
+	border-top-right-radius:29px;
+	border-bottom-left-radius:29px;
+	border-bottom-right-radius:29px;
+}
+
+
+
+br {
+  display: block;
+  margin-bottom: 2px;
+  font-size:2px;
+  line-height: 2px;
+}
+.cards {
+  max-width: 1200px;
+  display: grid;
+  margin-left: 7.87vw;
+  grid-gap: 9rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+  margin-top: 4rem;
+  align-content: center;
+  left: 2.5vw;
+  padding-top: 29.5vw;
+}
+
+
+h2 {
+    position: absolute;
+width: 294px;
+height: 90px;
+left: 38px;
+top: 45px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 45px;
+
+color: #000000;
+}
+
+
+
+.boximage {
+    position: absolute;
+width: 341px;
+height: 207px;
+left: 14.5px;
+top: 241px;
+}
+
+.feature-m h2{
+    color: white;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 24px;
+}
+
+.feature-m h3{
+    color: white;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 24px;
+}
+
+/* footer */
+.e121_173 { 
+	background-color:rgba(0, 0, 0, 1);
+	width:1440px;
+	height:360px;
+	position:relative;
+    top: 250px;
+}
+.e121_141 { 
+	width:84px;
+	height:57px;
+	position:absolute;
+	left:122px;
+	top:80px;
+}
+.e121_142 { 
+	color:rgba(255, 255, 255, 1);
+	width:84px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.e121_143 { 
+	color:rgba(0, 166.00000530481339, 136.00000709295273, 1);
+	width:47px;
+	height:21px;
+	position:absolute;
+	left:0px;
+	top:36px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.e121_154 { 
+	width:160px;
+	height:118px;
+	position:absolute;
+	left:1236px;
+	top:80px;
+}
+.e121_155 { 
+	color:rgba(255, 255, 255, 1);
+	width:160px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_156 { 
+	width:160px;
+	height:64px;
+	position:absolute;
+	left:0px;
+	top:54px;
+}
+.e121_157 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_158 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:38px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_159 { 
+	width:160px;
+	height:225px;
+	position:absolute;
+	left:1001px;
+	top:80px;
+}
+.e121_160 { 
+	color:rgba(255, 255, 255, 1);
+	width:160px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_161 { 
+	width:160px;
+	height:171px;
+	position:absolute;
+	left:0px;
+	top:54px;
+}
+.e121_162 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_163 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:38px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_164 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:76px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e121_165 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:160px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:114px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e235_145 { 
+	color:rgba(217.0000022649765, 219.0000021457672, 225.00000178813934, 1);
+	width:69px;
+	height:19px;
+	position:absolute;
+	left:0px;
+	top:152px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+</style>
+
+<title>Knewy</title>
+
+<body>
+    <div class="intro">
+        <h1>Look who's discovered <br>a gold mine ! </h1>
+    </div>
+
+	<div class="cards">
+		<div  class="card">
+			<h2>Find the best tutors <br>near you!</h2>
+			<div class="boximage">
+				<img src="static/slide1.png" ></div>
+			<div style="position: absolute;
+			width: 65px;
+			height: 64px;
+			left: 15px;
+			top: 254px;"><img src="static/head1.png" ></div>    
+			<div style="position: absolute;
+			width: 92px;
+			height: 182px;
+			left: 139px;
+			top: 136px;"><img src="static/head2.png" ></div>    
+			<div style="position: absolute;
+			width: 76px;
+			height: 74px;
+			right: 15px;
+			top: 254px;
+			"> <img src="static/head3.png" ></div>
+		</div>	
+			<div class="card">
+				<h2>All resources you <br>need at one place</h2>
+				<div class="boximage">
+					<img src="static/slide2.png" >
+				</div>        
+			</div> 
+
+			<div class="card">
+				<h2>Be the first to get <br>updated with the <br>latest edu news</h2>
+				<div style="position: absolute;
+				width: 359px;
+				height: 270px;
+				left: 5.5px;
+				top: 207px;">
+					
+					<img src="static/slide3.png" >
+				</div>        
+			</div>  
+</div>
+<div class="features">
+	<h1 style="position: relative;
+	width: 100%;
+	height: 24px;
+	text-align: center;
+	padding-top: 150px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 24px;">Don't Worry!</h1>
+	<div class="feature-m">
+		<h2 style="position: relative;
+		width: 457px;
+		height: 24px;
+		left: 121px;
+		padding-top:100px;">All the tutors are <span style="color: #00A688;">verified.</span></h2>
+		<h3 style="position: relative;
+		width: 320px;
+		height: 72px;
+		left: 168px;
+		top: 100px;">Like literally all of them. <br>In case... <br>That's not possible. Promise!</h3>
+		
+		<h2 style="position: relative;
+		width: 536px;
+		height: 24px;
+		left: 121px;
+		top: 150px;">Updates are <span style="color: #00A688;">double checked.</span></h2> 
+		<h3 style="position: relative;
+		width: 296px;
+		height: 48px;
+		left: 168px;
+		top: 155px;">We don't pay our interns<br>to triple check sometimes.</h3>  
+		
+		<h2 style="position: relative;
+		width: 667px;
+		height: 30px;
+		left: 121px;
+		top: 200px;">Resource page with <span style="color: #00A688;">Right Answers.</span></h2>  
+		<h3 style="position: relative;
+		width: 348px;
+		height: 48px;
+		left: 168px;
+		top: 205px;">Now that's True.<br>You can mark T. No doubt at all.</h3>                        
+	
+	</div>
+</div>
+<div class=e121_173>
+	<div class=e121_141><span  class="e121_142">Knewy</span><span  class="e121_143">(beta)</span></div>
+	<div class=e121_154><span  class="e121_155">Support</span>
+	  <div class=e121_156><span  class="e121_157">FAQs</span><span  class="e121_158">Feedback</span></div>
+	</div>
+	<div class=e121_159><span  class="e121_160">Company</span>
+	  <div class=e121_161><span  class="e121_162">About us</span><span  class="e121_163">Blog</span><span  class="e121_164">Contact us</span><span  class="e121_165">Internship</span><span  class="e235_145">Volunteer</span></div>
+	</div>
+
+
+
+  
+    
+    </div>
+</body>
+
+{% endblock %}
+
