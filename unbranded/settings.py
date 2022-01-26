@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'unbranded.urls'
+ROOT_URLCONF = 'knewy-test.unbranded.urls'
 
 
 TEMPLATES = [
