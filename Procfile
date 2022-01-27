@@ -1,1 +1,3 @@
-web: gunicorn unbranded.wsgi --log-files-
+web: gunicorn unbranded.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
