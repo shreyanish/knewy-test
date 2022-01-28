@@ -1,1 +1,1 @@
-web: gunicorn unbranded.wsgi --log-file- 
+web: gunicorn knewy-test.wsgi --log-file- 
