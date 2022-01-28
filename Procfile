@@ -1,1 +1,1 @@
-web: gunicorn knewy-test.wsgi 
+web: gunicorn unbranded.wsgi 
