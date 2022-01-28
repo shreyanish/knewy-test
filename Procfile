@@ -1,1 +1,1 @@
-web: gunicorn unbranded.wsgi 
+web: gunicorn unbranded.wsgi --log-file -
